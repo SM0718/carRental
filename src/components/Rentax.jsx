@@ -46,10 +46,8 @@ function Rentax() {
         <GirlPic setIsOpen={setIsOpen}/>
 
     <div className={`z-50 ${isOpen? "fixed flex" : "hidden"}  justify-center items-center inset-0 bg-black/50 mx-auto my-auto`}>
-      <Button onClick={() => setIsOpen(false)}
-      className={'absolute top-10 right-10 text-white size-8 border-2 border-[#f5b754] rounded-full'}
-      >X</Button>
-      <YouTubePlayer />
+      
+      <YouTubePlayer setIsOpen={setIsOpen}/>
     </div>
 
     </div>
