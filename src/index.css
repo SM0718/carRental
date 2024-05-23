@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.hiddenClass_1
+    {
+        transform: translateY(50px);
+        opacity: 0;
+        animation: showContent .5s .25s linear 1 forwards;
+    }
+
+.hiddenClass_2
+    {
+        transform: translateY(50px);
+        opacity: 0;
+        animation: showContent .5s .5s linear 1 forwards;
+    }
+
+.hiddenClass_3
+    {
+        transform: translateY(50px);
+        opacity: 0;
+        animation: showContent .5s .75s linear 1 forwards;
+    }
+
+.hiddenClass_4
+    {
+        transform: translateY(50px);
+        opacity: 0;
+        animation: showContent .5s 1s linear 1 forwards;
+    }
+    
+    @keyframes showContent{
+        to{
+            transform: translateY(0px);
+            opacity: 1;
+        }
+    }
+
+    .zoom
+    {   
+        
+        transform: scale(1);
+        transition: transform 0.3s ease-in-out;
+        animation: zoomContent .5s 1s linear 1 forwards;
+    }
+    
+    @keyframes zoomContent{
+        to{
+            transform: scale(1.2);
+        }
+    }
