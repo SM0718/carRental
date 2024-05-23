@@ -49,7 +49,7 @@ function Rentax() {
       <Button onClick={() => setIsOpen(false)}
       className={'absolute top-10 right-10 text-white size-8 border-2 border-[#f5b754] rounded-full'}
       >X</Button>
-      <YouTubePlayer isOpen={isOpen}/>
+      <YouTubePlayer />
     </div>
 
     </div>

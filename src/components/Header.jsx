@@ -90,7 +90,7 @@ function Header() {
     ]
 
   return (
-    <div className={`${color? "bg-black/75 py-6" : ""} w-full fixed z-40 flex items-center xl:justify-evenly justify-between px-8 py-4`}>
+    <div className={`${color? "bg-black/75 py-6" : ""} w-screen fixed z-40 flex items-center xl:justify-evenly justify-between px-8 py-4`}>
         <div className='w-full md:w-5/6 mx-auto z-30 flex items-center'>
            <Logo className={'w-[130px] h-[18.6px]'}/>
 

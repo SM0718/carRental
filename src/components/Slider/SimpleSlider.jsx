@@ -14,6 +14,28 @@ function SimpleSlider() {
     setSlideActive(e)
     setUpdateCount(updateCount + 1)
   }
+
+  function SampleNextArrow(props) {
+    const {style, onClick } = props;
+    return (
+      <div
+        className={`absolute right-0`}
+        style={{ ...style,opacity:"0",}}
+        onClick={onClick}
+      />
+    );
+  }
+  
+  function SamplePrevArrow(props) {
+    const {style, onClick } = props;
+    return (
+      <div
+        className={`absolute left-0`}
+        style={{ ...style,opacity:"0",}}
+        onClick={onClick}
+      />
+    );
+  }
  
   const settings = {
     className: "center",
@@ -21,6 +43,8 @@ function SimpleSlider() {
     centerPadding: "60px",
     slidesToShow: 1,
     swipeToSlide: true,
+    nextArrow: <SampleNextArrow />,
+    prevArrow: <SamplePrevArrow />,
     afterChange: function(e) {
       updateFunc(e)
     },
