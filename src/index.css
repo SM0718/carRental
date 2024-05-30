@@ -87,3 +87,7 @@
             transform: scale(1.2);
         }
     }
+
+.styledList li::marker {
+  color: #f2b553;
+}

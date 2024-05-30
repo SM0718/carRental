@@ -1,7 +1,7 @@
-import React, {useState, useEffect, useRef} from "react";
+import React, {useState, useRef} from "react";
 import Slider from "react-slick";
 import SliderCarInfo from './SliderCarInfo'
-import { headCarInfo } from '../../carInfos/headCarInfo'
+import { headCarInfo } from '../../../carInfos/headCarInfo'
 
 function SimpleSlider() {
 

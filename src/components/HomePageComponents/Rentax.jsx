@@ -1,7 +1,7 @@
 import React, {useState} from 'react'
-import Button from './Button'
-import GirlPic from './GirlPic'
-import YouTubePlayer from './YoutubePlayer'
+import Button from '../Button'
+import GirlPic from '../GirlPic'
+import YouTubePlayer from '../YoutubePlayer'
 
 function Rentax() {
 
