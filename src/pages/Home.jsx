@@ -1,15 +1,18 @@
 import React from 'react'
 import SimpleSlider from '../components/HomePageComponents/Slider/SimpleSlider'
+import { headCarInfo } from '../carInfos/headCarInfo'
 import Rentax from '../components/HomePageComponents/Rentax'
 import Parallax from '../components/Parallax'
 import Options from '../components/Options'
 import DateSelector from '../components/DateSelector'
 import Button from '../components/Button'
+import LuxuryCarFleet from '../components/HomePageComponents/LuxuryCarFleet'
+
 
 function Home() {
   return (
     <div className=''>
-      <SimpleSlider />
+      <SimpleSlider arr={headCarInfo}/>
       <Rentax />
       <Parallax
       className={'h-[600px] lg:h-[500px] bg-cover bg-no-repeat bg-center bg-fixed flex justify-center items-center'}
@@ -27,6 +30,7 @@ function Home() {
           </div>
         </div>
       </Parallax>
+      <LuxuryCarFleet />
     </div>
     
   )
