@@ -1,10 +1,10 @@
 export const scrollCarInfo = [
     {
-        name: 'Rolls Royce',
-        price: '$900',
-        img: './car/rollsRoyce.webp',
-        seats: '4',
-        bags: '4'
+        name: 'Bugatti Mistral W16',
+        price: '$450',
+        img: './car/bugattiMistralW16.webp',
+        seats: '2',
+        bags: '2'
     },
     {
         name: 'Bently Bentayga',
@@ -35,11 +35,11 @@ export const scrollCarInfo = [
         bags: '2'
     },
     {
-        name: 'Bugatti Mistral W16',
-        price: '$450',
-        img: './car/bugattiMistralW16.webp',
-        seats: '2',
-        bags: '2'
+        name: 'Rolls Royce',
+        price: '$900',
+        img: './car/rollsRoyce.webp',
+        seats: '4',
+        bags: '4'
     },
     {
         name: 'Bently Continental',

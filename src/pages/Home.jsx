@@ -22,9 +22,9 @@ function Home() {
           <p className='text-[35px] font-black text-white'>Book Auto Rental</p>
           <div className='w-full h-96 lg:h-20 flex flex-col lg:flex-row justify-between items-start lg:items-center py-8 px-4 bg-[#222222] text-[#999999] rounded-xl lg:rounded-full '>
             <Options className={''} options={['Choose Car Type', 'All', 'Luxury Cars', 'Sports Cars', 'SUVs', 'Convertables']}/>
-            <Options options={['Pickup Location', 'Kolkata', 'Mumbai', 'Mumbai', 'Delhi', 'Bangalore']}/>
+            <Options options={['Pickup Location', 'Kolkata', 'Mumbai', 'Delhi', 'Bangalore']}/>
             <DateSelector />
-            <Options options={['Drop Location', 'Kolkata', 'Mumbai', 'Mumbai', 'Delhi', 'Bangalore']}/>
+            <Options options={['Drop Location', 'Kolkata', 'Mumbai', 'Delhi', 'Bangalore']}/>
             <DateSelector />
             <Button className={'transition ease-in-out text-black bg-[#f5b754] mx-auto lg:mx-0 flex justify-center gap-2 rounded-full px-10 py-4 hover:bg-white'}>Rent Now</Button>
           </div>
