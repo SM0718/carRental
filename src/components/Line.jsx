@@ -1,8 +1,10 @@
 import React from 'react'
 
-function Line() {
+function Line({className}) {
   return (
-    <div className='w-[1px] h-5 bg-[#f5b754]'/>
+    <div className={className}>
+      <div className='w-[1px] h-16 border-[1px] border-[#f5b754]'/>
+    </div>
   )
 }
 

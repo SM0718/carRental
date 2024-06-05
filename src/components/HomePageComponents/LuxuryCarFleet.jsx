@@ -56,7 +56,7 @@ function LuxuryCarFleet() {
     };
   }, [windowWidth]);
   return (
-    <div className='w-full h-[900px] flex flex-col gap-8 items-center bg-[#222222] pt-24'>
+    <div className='w-full h-[750px] flex flex-col gap-8 items-center bg-[#222222] pt-24'>
         <div className='flex flex-col gap-3 text-center'>
             <p className='text-[#f5b754] text-[10px] tracking-[10px]'>SELECT YOUR CAR</p>
             <p className='text-[35px] font-bold text-white'>Luxury <span className=' text-[#f5b754]'>Car Fleet</span></p>
@@ -70,7 +70,7 @@ function LuxuryCarFleet() {
                         <div className='h-full relative bg-cover bg-center bg-no-repeat
                              rounded-2xl transition ease-in-out duration-300'
                         style={{backgroundImage: `url(${item.img})`}} >
-                          <LuxuryCarInfo carName={item.name} seats={item.seats} price={item.price}/>
+                          <LuxuryCarInfo carName={item.name} seats={item.seats} price={item.price} bags={item.bags} />
                         </div>
                         
                     </div>)

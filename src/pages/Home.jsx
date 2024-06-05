@@ -7,6 +7,9 @@ import Options from '../components/Options'
 import DateSelector from '../components/DateSelector'
 import Button from '../components/Button'
 import LuxuryCarFleet from '../components/HomePageComponents/LuxuryCarFleet'
+import Services from '../components/HomePageComponents/Services'
+import Line from '../components/Line'
+import CarRentalTypes from '../components/HomePageComponents/CarRentalTypes'
 
 
 function Home() {
@@ -14,6 +17,7 @@ function Home() {
     <div className=''>
       <SimpleSlider arr={headCarInfo}/>
       <Rentax />
+      <Services />
       <Parallax
       className={'h-[600px] lg:h-[500px] bg-cover bg-no-repeat bg-center bg-fixed flex justify-center items-center'}
       bgImg={'./car/silverAudi.webp'}>
@@ -31,6 +35,7 @@ function Home() {
         </div>
       </Parallax>
       <LuxuryCarFleet />
+      <CarRentalTypes />
     </div>
     
   )
