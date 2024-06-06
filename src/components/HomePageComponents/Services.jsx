@@ -29,6 +29,10 @@ function Services() {
     infinite: true,
     speed: 1000,
     slidesToShow: windowWidth > 600 && windowWidth < 1500? 2 : windowWidth < 600? 1 : 3,
+    autoplay: true,
+    speed: 3000,
+    autoplaySpeed: 2000,
+    cssEase: "linear",
     nextArrow: <SampleNextArrow />,
     prevArrow: <SamplePrevArrow />,
   };

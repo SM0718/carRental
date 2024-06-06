@@ -3,6 +3,7 @@ import YouTube from 'react-youtube';
 import Button from './Button';
 
 const YouTubePlayer = ({setIsOpen}) => {
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
   const [playing, setPlaying] = useState(false);
   const playerRef = useRef(null);
 
@@ -21,16 +22,27 @@ const YouTubePlayer = ({setIsOpen}) => {
   }, [playing]);
 
   const opts = {
-    height: '390',
-    width: '440',
+    height: windowWidth < 800? '290' : '375',
+    width: windowWidth < 800? '320' : '420',
     playerVars: {
       autoplay: 0,
       controls: 1,
     },
   };
 
+  const handleResize = () => {
+    setWindowWidth(window.innerWidth);
+  };
+
+  useEffect(() => {
+    window.addEventListener('resize', handleResize);
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, [windowWidth]);
+
   return (
-    <div>
+    <div className='z-50 relative'>
       <YouTube
         videoId="1LxcTt1adfY"
         opts={opts}
@@ -38,7 +50,7 @@ const YouTubePlayer = ({setIsOpen}) => {
       />
 
       <Button onClick={() => setPlaying(!playing)}
-      className={'absolute top-10 right-10 text-white size-8 border-2 border-[#f5b754] rounded-full'}
+      className={'absolute z-50 -top-10 -right-50 text-white size-8 border-2 border-[#f5b754] rounded-full'}
       >X</Button>
     </div>
   );

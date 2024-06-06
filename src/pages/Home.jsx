@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useState} from 'react'
 import SimpleSlider from '../components/HomePageComponents/Slider/SimpleSlider'
 import { headCarInfo } from '../carInfos/headCarInfo'
 import Rentax from '../components/HomePageComponents/Rentax'
@@ -8,11 +8,15 @@ import DateSelector from '../components/DateSelector'
 import Button from '../components/Button'
 import LuxuryCarFleet from '../components/HomePageComponents/LuxuryCarFleet'
 import Services from '../components/HomePageComponents/Services'
-import Line from '../components/Line'
 import CarRentalTypes from '../components/HomePageComponents/CarRentalTypes'
+import YouTubePlayer from '../components/YoutubePlayer'
+import PlayButton from '../components/svgComponents/PlayButton'
 
 
 function Home() {
+
+  const [isOpen, setIsOpen] = useState(false);
+
   return (
     <div className=''>
       <SimpleSlider arr={headCarInfo}/>
@@ -36,6 +40,24 @@ function Home() {
       </Parallax>
       <LuxuryCarFleet />
       <CarRentalTypes />
+      <Parallax
+      className={'h-[550px] lg:h-[450px] bg-cover bg-no-repeat bg-center bg-fixed flex justify-center items-center'}
+      bgImg={'./car/bugatti.webp'}>
+          <div className='w-full rounded-full mx-4 sm:mx-16 md:mx-32 flex flex-col justify-center items-center gap-6'>
+              <p className='text-[#f5b754] text-[10px] tracking-[10px]'>EXPLORE</p>
+              <p className='text-[35px] font-black text-white'>Car <span className='text-[#f5b754]'>Promo</span> Video</p>
+                <Button
+                  onClick={() => setIsOpen(true)}
+                className={'rounded-full p-6 border-[1px] border-[#f5b754] transition ease-in-out duration-300 hover:bg-[#f5b754]'}>
+                <PlayButton w={'48'} h={'48'} sw={2}/>
+                </Button>
+              <div className={`z-50 ${isOpen? "fixed flex" : "hidden"}  justify-center items-center inset-0 bg-black/50 mx-auto my-auto`}>
+                <YouTubePlayer setIsOpen={setIsOpen}/>
+              </div>
+          </div>
+          
+      </Parallax>
+      
     </div>
     
   )

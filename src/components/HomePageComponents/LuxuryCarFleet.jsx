@@ -46,7 +46,6 @@ function LuxuryCarFleet() {
 
   const handleResize = () => {
     setWindowWidth(window.innerWidth);
-    console.log(windowWidth)
   };
 
   useEffect(() => {
@@ -59,7 +58,7 @@ function LuxuryCarFleet() {
     <div className='w-full h-[750px] flex flex-col gap-8 items-center bg-[#222222] pt-24'>
         <div className='flex flex-col gap-3 text-center'>
             <p className='text-[#f5b754] text-[10px] tracking-[10px]'>SELECT YOUR CAR</p>
-            <p className='text-[35px] font-bold text-white'>Luxury <span className=' text-[#f5b754]'>Car Fleet</span></p>
+            <p className='text-[35px] font-bold text-white'>Luxury <span className='text-[#f5b754]'>Car Fleet</span></p>
         </div>
 
 <div className="slider-container w-screen h-[500px]">
