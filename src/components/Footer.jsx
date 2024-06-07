@@ -55,7 +55,7 @@ function Footer() {
 ]
 
   return (
-    <div className='w-full py-28 px-8 flex flex-col gap-24 bg-[#222222] z-20'>
+    <div className='w-full py-28 px-8 flex flex-col gap-24 bg-[#1b1b1b] z-20'>
       <div className='w-full flex flex-col md:flex-row justify-start md:justify-evenly gap-8 md:gap-2'>
         <div className='flex gap-4'>
           <Icon className={'size-16 rounded-full bg-[#f5b754] flex items-center justify-center'}>

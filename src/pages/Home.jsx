@@ -11,6 +11,8 @@ import Services from '../components/HomePageComponents/Services'
 import CarRentalTypes from '../components/HomePageComponents/CarRentalTypes'
 import YouTubePlayer from '../components/YoutubePlayer'
 import PlayButton from '../components/svgComponents/PlayButton'
+import Testimonials from '../components/HomePageComponents/Testimonials'
+import CarLogos from '../components/CarLogos'
 
 
 function Home() {
@@ -57,7 +59,20 @@ function Home() {
           </div>
           
       </Parallax>
-      
+      <Testimonials />
+      <Parallax
+      className={'h-[550px] lg:h-[450px] bg-cover bg-no-repeat bg-center bg-fixed flex justify-center items-center'}
+      bgImg={'./astonMartin.webp'}>
+          <div className='w-full rounded-full mx-4 sm:mx-16 md:mx-32 flex flex-col justify-center items-center gap-2'>
+              <p className='text-[#f5b754] text-[10px] tracking-[10px]'>RENT YOUR CAR</p>
+              <p className='text-[35px] font-black text-white'>Interested <span className='text-[#f5b754]'>in</span> Renting?</p>
+              <div className='flex flex-col md:flex-row gap-4 mt-4'>
+                <Button className={'transition ease-in-out bg-[#f5b754] flex justify-center gap-2 rounded-full px-10 py-4 hover:bg-white hover:-translate-y-1'}>View Details <p>&#8599;</p></Button>
+                <Button className={'transition ease-in-out flex justify-center gap-2 rounded-full px-12 py-4 text-white border-2 hover:border-[#f5b754] border-white hover:bg-[#f5b754] hover:text-black hover:-translate-y-1'}>Rent Now <p>&#8599;</p></Button>
+            </div>
+          </div>
+      </Parallax>
+      <CarLogos />
     </div>
     
   )
