@@ -4,6 +4,7 @@ import Gear from '../svgComponents/Gear'
 import Shield from '../svgComponents/Shield'
 import Profile from'../svgComponents/Profile'
 import Button from '../Button'
+import {NavLink} from 'react-router-dom'
 
 function LuxuryCarInfo({carName, price, seats, bags}) {
   return (
@@ -32,7 +33,10 @@ function LuxuryCarInfo({carName, price, seats, bags}) {
         </div>
 
         <div className='flex justify-center items-center gap-4'>
-          <Button className={'transition duration-500 bg-[#f5b754] text-[#1b1b1b] text-[14px] px-5 sm:px-6 py-3 sm:py-4 rounded-full hover:bg-white cursor-pointer'}>Details</Button>
+           <NavLink>
+          <Button className={'transition duration-500 bg-[#f5b754] text-[#1b1b1b] text-[14px] px-5 sm:px-6 py-3 sm:py-4 rounded-full hover:bg-white cursor-pointer'}>
+           Details</Button>
+           </NavLink>
           <span className='flex flex-col items-start'>
             <span className='text-[#f5b754] font-bold text-[16px] sm:text-[21px]'>{price}</span>
             <span className='text-[#999999] text-[10px] sm:text-[14px]'>/day</span>

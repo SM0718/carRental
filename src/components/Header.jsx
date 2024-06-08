@@ -5,6 +5,7 @@ import Button from './Button'
 import ResponsiveNav from './ResponsiveNav'
 import Phone from './svgComponents/Phone'
 import Hamburger from './svgComponents/Hamburger'
+import ProgressBar from './ProgressBar'
 
 function Header() {
 
@@ -93,13 +94,14 @@ function Header() {
 
   return (
     <div className={`${color? "bg-black/75 py-6" : ""} w-screen fixed z-40 flex items-center xl:justify-evenly justify-between px-8 py-4`}>
-        <div className='w-full md:w-5/6 mx-auto z-30 flex items-center'>
+        <div className='w-full md:w-5/6 mx-auto z-30 flex items-center relative'>
            <Logo className={'w-[130px] h-[18.6px]'}/>
 
            <div className='w-5/6 flex justify-end'>
             <Button onClick={() => setShow(!show)} className={'xl:hidden flex'}>
                 <Hamburger />
             </Button>
+            
         <div className='w-1/2 hidden xl:flex justify-evenly gap-6'>
            <div className=' flex items-center gap-8 text-sm'>
             {
@@ -124,6 +126,7 @@ function Header() {
         </div> 
            </div>
         
+           <ProgressBar  className={`${color? "flex" : "hidden"} absolute -bottom-[600px] md:-right-[10px] lg:-right-[100px]`}/>
         </div>
         
 

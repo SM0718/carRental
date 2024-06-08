@@ -20,7 +20,7 @@ function Home() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <div className=''>
+    <div className='relative'>
       <SimpleSlider arr={headCarInfo}/>
       <Rentax />
       <Services />
@@ -73,6 +73,8 @@ function Home() {
           </div>
       </Parallax>
       <CarLogos />
+      
+    {/* <ProgressBar className={''}/> */}
     </div>
     
   )
