@@ -27,7 +27,7 @@ function CarDetail() {
 
       <div className='w-full flex flex-col xl:flex-row justify-center gap-8 px-8 lg:px-40 lg:pt-20'>
 
-        <div className='w-full xl:w-1/2 flex flex-col items-start justify-start gap-8'>
+        <div className='w-full xl:w-1/2 flex flex-col items-start justify-start gap-8 mt-8 xl:mt-0'>
           <h1 className='text-white text-[21px] font-bold w-full'>General Information</h1>
           <p className='text-[#999999] text-[14px] lg:w-1/2 leading-loose w-full'>Lorem pretium fermentum quam, sit amet cursus ante sollicitudin velen morbi consesua the miss sustion consation miss orcisition amet iaculis nisan. Lorem pretium fermentum quam sit amet cursus ante sollicitudin velen fermen orbinetion consesua the risus consequation the porttiton.</p>
           <div className=' flex flex-col gap-4'>
@@ -54,7 +54,7 @@ function CarDetail() {
           </div>
         </div>
 
-        <div className='w-full xl:w-1/2 rounded-xl  right-44 -top-24 z-50'>
+        <div className='w-full xl:w-1/2 rounded-xl z-30 right-44 -top-24'>
           <div className='bg-[#f5b754] text-[#1b1b1b] px-22 py-6 flex items-end rounded-t-3xl justify-center font-bold text-[32px]'>{car.price}<span className='text-[14px] font-thin'>/DAY</span>
           </div>
           <div className='w-full flex flex-col justify-center bg-[#222222]'>
