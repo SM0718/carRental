@@ -27,24 +27,6 @@ function Header() {
         {
             name: 'Home',
             slug: '/',
-            subItems: {
-                item1: {
-                    name: 'Slider',
-                    slug: '#'
-                },
-                item2:  {
-                    name: 'Image',
-                    slug: '#'
-                },
-                item3:  {
-                    name: 'Video',
-                    slug: '#'
-                },
-                item4: {
-                    name: 'Slideshow',
-                    slug: '#'
-                },
-            }
         },
         {
             name: 'About',
@@ -56,39 +38,7 @@ function Header() {
         },
         {
             name: 'Cars',
-            slug: '/cars',
-            subItems: {
-                item1: {
-                    name: 'Car Grid',
-                    slug: '#'
-                },
-                items2: {
-                    name: 'Cars Listings',
-                    slug: '#'
-                },
-            }
-        },
-        {
-            name: 'Pages',
-            slug: '/pages',
-            subItems: {
-                item1: {
-                    name: 'Team',
-                    slug: '#'
-                },
-                items2: {
-                    name: 'FAQ',
-                    slug: '#'
-                },
-                items3: {
-                    name: 'Testmonials',
-                    slug: '#'
-                },
-            }
-        },
-        {
-            name: 'Contact',
-            slug: '/contact'
+            slug: '/cars/car-detail/Bugatti-Mistral-W16',
         }
     ]
 
@@ -126,7 +76,7 @@ function Header() {
         </div> 
            </div>
         
-           <ProgressBar  className={`${color? "flex" : "hidden"} absolute -bottom-[600px] md:-right-[10px] lg:-right-[100px]`}/>
+           <ProgressBar  className={`${color? "flex" : "hidden"} absolute -bottom-[630px] md:-bottom-[600px] md:-right-[10px] lg:-right-[100px]`}/>
         </div>
         
 

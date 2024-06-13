@@ -69,7 +69,7 @@ function LuxuryCarFleet() {
                         <div className='h-full relative bg-cover bg-center bg-no-repeat
                              rounded-2xl transition ease-in-out duration-300'
                         style={{backgroundImage: `url(${item.img})`}} >
-                          <LuxuryCarInfo carName={item.name} seats={item.seats} price={item.price} bags={item.bags} />
+                          <LuxuryCarInfo carName={item.name} seats={item.seats} price={item.price} bags={item.bags} slug={item.slug}/>
                         </div>
                         
                     </div>)

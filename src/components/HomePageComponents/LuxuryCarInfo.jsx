@@ -6,7 +6,7 @@ import Profile from'../svgComponents/Profile'
 import Button from '../Button'
 import {NavLink} from 'react-router-dom'
 
-function LuxuryCarInfo({carName, price, seats, bags}) {
+function LuxuryCarInfo({carName, price, seats, bags, slug}) {
   return (
     <div className='h-28 sm:h-24 bg-[#222222]/75 backdrop-blur-sm absolute transition duration-500 text-white -bottom-32 sm:-bottom-28 group-hover/info:-translate-y-32 sm:group-hover/info:-translate-y-28 w-full text-center z-50
     flex flex-col sm:flex-row justify-evenly items-start px-2 sm:items-center'>
@@ -33,7 +33,7 @@ function LuxuryCarInfo({carName, price, seats, bags}) {
         </div>
 
         <div className='flex justify-center items-center gap-4'>
-           <NavLink>
+           <NavLink to={`cars/car-detail/${slug}`}>
           <Button className={'transition duration-500 bg-[#f5b754] text-[#1b1b1b] text-[14px] px-5 sm:px-6 py-3 sm:py-4 rounded-full hover:bg-white cursor-pointer'}>
            Details</Button>
            </NavLink>

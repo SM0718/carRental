@@ -6,7 +6,8 @@ import { Route, RouterProvider, createBrowserRouter, createRoutesFromElements } 
 import {
   Home,
   About,
-  Services
+  Services,
+  CarDetail
 } from './pages/index.js'
 
 const router = createBrowserRouter(
@@ -15,6 +16,7 @@ const router = createBrowserRouter(
       <Route path='' element={<Home />} />
       <Route path='/about' element={<About />} />
       <Route path='/services' element={<Services />}/>
+      <Route path='/cars/car-detail/:id' element={<CarDetail />} />
     </Route>
   )
 )

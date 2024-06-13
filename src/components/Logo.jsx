@@ -1,10 +1,11 @@
 import React from 'react'
+import { NavLink } from 'react-router-dom'
 
 function Logo({className}) {
   return (
-    <div className={className}>
-        <img className='size-full' src='./renax.png' alt='renax.png'/>
-    </div>
+    <NavLink to={'/'} className={className}>
+        <img className='size-full' src='/./renax.png' alt='renax.png'/>
+    </NavLink>
   )
 }
 
